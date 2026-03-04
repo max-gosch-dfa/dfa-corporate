@@ -109,7 +109,16 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="mt-2 rounded-md bg-primary px-4 py-2 text-center text-sm font-medium text-white"
             >
-              Desert Frontier Beta
+              Desert Frontier{" "}
+              <span
+                style={{
+                  background: "linear-gradient(135deg, #B08D57 0%, #D4B87A 60%, #F5EDE0 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                Beta
+              </span>
             </a>
           </div>
         </div>
