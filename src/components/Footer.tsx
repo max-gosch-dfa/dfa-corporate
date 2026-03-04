@@ -36,15 +36,15 @@ export default function Footer() {
             </h4>
             <ul className="mt-3 space-y-2">
               <li>
-                <a
+                
                   href="#advisory"
                   className="text-sm text-white/60 transition-colors hover:text-white"
                 >
-                  M&amp;A Advisory
+                  M&A Advisory
                 </a>
               </li>
               <li>
-                <a
+                
                   href="#consulting"
                   className="text-sm text-white/60 transition-colors hover:text-white"
                 >
@@ -52,7 +52,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
+                
                   href="https://delfos.desertfrontieradvisors.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -71,7 +71,7 @@ export default function Footer() {
             </h4>
             <ul className="mt-3 space-y-2">
               <li>
-                <a
+                
                   href="#about"
                   className="text-sm text-white/60 transition-colors hover:text-white"
                 >
@@ -79,7 +79,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
+                
                   href="#contact"
                   className="text-sm text-white/60 transition-colors hover:text-white"
                 >
@@ -96,7 +96,7 @@ export default function Footer() {
             </h4>
             <ul className="mt-3 space-y-2">
               <li>
-                <a
+                
                   href="/terms"
                   className="text-sm text-white/60 transition-colors hover:text-white"
                 >
@@ -104,7 +104,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
+                
                   href="/privacy"
                   className="text-sm text-white/60 transition-colors hover:text-white"
                 >
