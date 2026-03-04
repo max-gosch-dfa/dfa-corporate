@@ -39,6 +39,16 @@ export default function Hero() {
               >
                 Beta
               </span>
+              {" & "}
+              <span
+                style={{
+                  background: "linear-gradient(135deg, #0D7C3E 0%, #34D399 60%, #A7F3D0 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                Alpha
+              </span>
             </a>
           </div>
         </div>

@@ -12,7 +12,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Desert Frontier Advisors | Advisory & Transaction Services",
   description:
-    "Specialist advisory firm providing M&A, transaction, and strategic consulting services. Home of Desert Frontier Beta — transparent, low-cost beta portfolios.",
+    "Specialist advisory firm providing M&A, transaction, and strategic consulting services. Home of Desert Frontier Beta & Alpha — transparent, low-cost beta and alpha portfolios.",
   openGraph: {
     title: "Desert Frontier Advisors",
     description:

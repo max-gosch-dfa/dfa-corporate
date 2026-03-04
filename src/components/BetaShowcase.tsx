@@ -5,7 +5,7 @@ const FEATURES = [
         <path d="M3 3v18h18" /><path d="M7 16l4-8 4 4 4-6" />
       </svg>
     ),
-    title: "5 Model Portfolios",
+    title: "6 Model Portfolios",
     description:
       "Risk-parity inspired allocations across equities, bonds, gold, commodities, and TIPS.",
   },
@@ -36,10 +36,29 @@ export default function BetaShowcase() {
     <section className="scroll-mt-20 bg-surface-warm">
       <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
         <h2 className="text-center text-2xl font-bold text-primary sm:text-3xl">
-          <span className="text-accent">/ </span>Desert Frontier Beta
+          <span className="text-accent">/ </span>Desert Frontier{" "}
+          <span
+            style={{
+              background: "linear-gradient(135deg, #B08D57 0%, #D4B87A 60%, #F5EDE0 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            Beta
+          </span>
+          {" & "}
+          <span
+            style={{
+              background: "linear-gradient(135deg, #0D7C3E 0%, #34D399 60%, #A7F3D0 100%)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
+            Alpha
+          </span>
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-primary/60">
-          Transparent, low-cost beta portfolios built on risk-parity principles.
+          Transparent beta and alpha portfolios built on risk-parity principles and thematic research.
           Giving investors and corporate treasuries access to institutional-quality
           diversification &mdash; without the institutional fees.
         </p>
@@ -79,6 +98,16 @@ export default function BetaShowcase() {
               }}
             >
               Beta
+            </span>
+            {" & "}
+            <span
+              style={{
+                background: "linear-gradient(135deg, #0D7C3E 0%, #34D399 60%, #A7F3D0 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              Alpha
             </span>{" "}
             &rarr;
           </a>
