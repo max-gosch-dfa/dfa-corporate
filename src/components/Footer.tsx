@@ -9,10 +9,20 @@ export default function Footer() {
               <span className="text-lg font-semibold text-white">
                 Desert Frontier
               </span>
-              <span className="text-sm font-medium text-accent">
+              <span
+                className="text-lg font-semibold"
+                style={{
+                  background: "linear-gradient(135deg, #B08D57 0%, #D4B87A 60%, #F5EDE0 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
                 Advisors
               </span>
             </div>
+            <p className="mt-1 text-sm text-accent">
+              Incorporated in Dubai
+            </p>
             <p className="mt-3 text-sm text-white/60">
               Specialist advisory firm providing transaction and strategic
               advice, grounded in disciplined execution and practical experience.
@@ -111,7 +121,7 @@ export default function Footer() {
         {/* Disclaimer */}
         <div className="mt-8 border-t border-white/10 pt-8">
           <p className="text-xs text-white/40 leading-5">
-            <strong>Disclaimer:</strong> Desert Frontier Advisors,
+            <strong>Disclaimer:</strong> Desert Frontier Advisors – FZCO,
             incorporated in Dubai. This platform is for educational and
             informational purposes only. It does not constitute investment
             advice. Desert Frontier Beta publishes model portfolios for
@@ -124,7 +134,7 @@ export default function Footer() {
         {/* Copyright */}
         <div className="mt-6 text-center">
           <p className="text-xs text-white/30">
-            &copy; {new Date().getFullYear()} Desert Frontier Advisors.
+            &copy; {new Date().getFullYear()} Desert Frontier Advisors – FZCO.
             All rights reserved.
           </p>
         </div>
