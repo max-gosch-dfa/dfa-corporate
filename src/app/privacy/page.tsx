@@ -97,7 +97,9 @@ export default function PrivacyPage() {
 
             <h2 className="text-lg font-semibold text-white">10. Contact</h2>
             <p>
-              For privacy-related inquiries, contact us at{" "}
+              Desert Frontier Advisors – FZCO, registered at Building A1,
+              Dubai Digital Park, Dubai Silicon Oasis, Dubai, United Arab
+              Emirates. For privacy-related inquiries, contact us at{" "}
               <a
                 href="mailto:privacy@desertfrontieradvisors.com"
                 className="text-accent underline"

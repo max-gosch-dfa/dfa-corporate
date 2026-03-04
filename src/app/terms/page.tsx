@@ -56,9 +56,11 @@ export default function TermsPage() {
               5. Governing Law
             </h2>
             <p>
-              These terms are governed by the laws of the Dubai International
-              Financial Centre (DIFC). Any disputes shall be resolved through
-              arbitration under DIFC Arbitration Rules.
+              Desert Frontier Advisors – FZCO is registered at Building A1,
+              Dubai Digital Park, Dubai Silicon Oasis, Dubai, United Arab
+              Emirates. These terms are governed by the laws of the United Arab
+              Emirates. Any disputes shall be resolved through arbitration in
+              Dubai.
             </p>
 
             <h2 className="text-lg font-semibold text-white">6. Contact</h2>
