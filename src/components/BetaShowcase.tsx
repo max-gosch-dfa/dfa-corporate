@@ -34,47 +34,45 @@ const FEATURES = [
 export default function BetaShowcase() {
   return (
     <section className="scroll-mt-20 bg-surface-warm">
-      <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 lg:px-8">
-        <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent">
-          <span className="text-accent/50">/ </span>
-          Desert Frontier Beta
-        </p>
-        <h2 className="mt-4 text-3xl font-bold text-primary sm:text-4xl">
-          Transparent, low-cost beta portfolios built on risk-parity principles.
+      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <h2 className="text-center text-2xl font-bold text-primary sm:text-3xl">
+          <span className="text-accent">/ </span>Desert Frontier Beta
         </h2>
-        <p className="mt-6 max-w-3xl text-lg leading-relaxed text-primary/70">
-          Desert Frontier Beta publishes model portfolios that give investors
-          and corporate treasuries access to institutional-quality
+        <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-primary/60">
+          Transparent, low-cost beta portfolios built on risk-parity principles.
+          Giving investors and corporate treasuries access to institutional-quality
           diversification &mdash; without the institutional fees.
         </p>
 
-        <div className="mt-16 grid gap-8 sm:grid-cols-3">
+        <div className="mt-12 grid gap-8 sm:grid-cols-3">
           {FEATURES.map((feat) => (
             <div
               key={feat.title}
-              className="rounded-lg border border-surface-muted border-l-[3px] border-l-accent bg-white p-8 shadow-sm transition-shadow hover:shadow-md"
+              className="rounded-lg border border-surface-muted border-l-[3px] border-l-accent bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
             >
-              <div className="text-accent">{feat.icon}</div>
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10">
+                <div className="text-accent">{feat.icon}</div>
+              </div>
               <h3 className="mt-4 text-lg font-semibold text-primary">
                 {feat.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-primary/60">
+              <p className="mt-2 text-sm leading-relaxed text-primary/60">
                 {feat.description}
               </p>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-8 text-center">
           <a
             href="https://delfos.desertfrontieradvisors.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-full bg-accent px-8 py-3 text-sm font-semibold text-primary transition-colors hover:bg-accent-light"
+            className="text-sm font-medium text-accent transition-colors hover:text-accent/80"
           >
             Explore Desert Frontier Beta &rarr;
           </a>
-          <p className="mt-6 text-center text-xs leading-relaxed text-primary/50">
+          <p className="mt-4 text-xs leading-relaxed text-primary/50">
             Model portfolios for educational purposes only. Not investment
             advice. Past performance does not guarantee future results.
           </p>

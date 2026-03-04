@@ -25,7 +25,7 @@ export default function ServiceSection({
       id={id}
       className={`scroll-mt-20 ${dark ? "bg-primary-light" : "bg-primary"}`}
     >
-      <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
         <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent">
           <span className="text-accent/50">/ </span>
           {label}

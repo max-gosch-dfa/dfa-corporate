@@ -14,22 +14,17 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-primary/95 backdrop-blur-sm">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3">
           <Image
             src="/logo.png"
             alt="Desert Frontier Advisors"
-            width={32}
-            height={32}
-            className="h-8 w-8"
+            width={120}
+            height={35}
+            className="h-8 w-auto"
+            priority
           />
-          <div className="flex items-baseline gap-1.5">
-            <span className="text-lg font-semibold text-white">
-              Desert Frontier
-            </span>
-            <span className="text-sm font-medium text-accent">Advisors</span>
-          </div>
         </a>
 
         {/* Desktop nav */}
@@ -38,7 +33,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-white/70 transition-colors hover:text-white"
+              className="text-sm font-medium text-white/70 transition-colors hover:text-accent"
             >
               {link.label}
             </a>
@@ -47,7 +42,7 @@ export default function Navbar() {
             href="https://delfos.desertfrontieradvisors.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-primary transition-colors hover:bg-accent-light"
+            className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-accent/90"
           >
             Desert Frontier Beta
           </a>
@@ -56,29 +51,29 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden"
+          className="p-2 text-white md:hidden"
           aria-label="Toggle menu"
         >
           <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
+            className="h-6 w-6"
             fill="none"
             stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
+            viewBox="0 0 24 24"
           >
             {open ? (
-              <>
-                <path d="M6 6l12 12" />
-                <path d="M6 18L18 6" />
-              </>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             ) : (
-              <>
-                <path d="M3 6h18" />
-                <path d="M3 12h18" />
-                <path d="M3 18h18" />
-              </>
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             )}
           </svg>
         </button>
@@ -87,13 +82,13 @@ export default function Navbar() {
       {/* Mobile menu */}
       {open && (
         <div className="border-t border-white/10 bg-primary px-4 pb-6 pt-4 md:hidden">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-3">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="text-sm text-white/70 transition-colors hover:text-white"
+                className="px-2 py-1 text-sm font-medium text-white/70 transition-colors hover:text-accent"
               >
                 {link.label}
               </a>
@@ -102,7 +97,7 @@ export default function Navbar() {
               href="https://delfos.desertfrontieradvisors.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-block rounded-full bg-accent px-5 py-2 text-center text-sm font-semibold text-primary"
+              className="mt-2 rounded-md bg-accent px-4 py-2 text-center text-sm font-medium text-white"
             >
               Desert Frontier Beta
             </a>

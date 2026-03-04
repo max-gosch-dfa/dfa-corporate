@@ -13,10 +13,6 @@ export const metadata: Metadata = {
   title: "Desert Frontier Advisors | Advisory & Transaction Services",
   description:
     "Specialist advisory firm providing M&A, transaction, and strategic consulting services. Home of Desert Frontier Beta — transparent, low-cost beta portfolios.",
-  icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
-  },
   openGraph: {
     title: "Desert Frontier Advisors",
     description:
@@ -33,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>
+      <body className={`${inter.variable} font-sans antialiased`}>
         {children}
         <CookieConsent />
       </body>
