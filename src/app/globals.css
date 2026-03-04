@@ -19,6 +19,6 @@ html {
 body {
   background: #0A1A2F;
   color: #F7F5F2;
-  font-family: var(--font-inter), "DengXian Light", system-ui, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   font-weight: 300;
 }

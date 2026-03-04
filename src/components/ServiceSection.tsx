@@ -40,10 +40,10 @@ export default function ServiceSection({
               <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10">
                 <div className="text-accent">{cap.icon}</div>
               </div>
-              <h3 className="mt-4 text-sm font-semibold text-primary">
+              <h3 className="mt-4 text-lg font-semibold text-primary">
                 {cap.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-primary/60">
+              <p className="mt-2 text-sm leading-6 text-primary/60">
                 {cap.description}
               </p>
             </div>

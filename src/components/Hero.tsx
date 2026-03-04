@@ -14,8 +14,7 @@ export default function Hero() {
           </h1>
           <p className="mt-6 text-lg leading-8 text-white/70">
             Desert Frontier Advisors is a specialist advisory firm providing
-            transaction and strategic advice, grounded in disciplined execution
-            and practical experience.
+            transaction and strategic advice, grounded in disciplined execution and practical experience.
           </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <a
@@ -30,7 +29,16 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="rounded-md border border-white/20 px-6 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-white/10"
             >
-              Desert Frontier Beta
+              Desert Frontier{" "}
+              <span
+                style={{
+                  background: "linear-gradient(135deg, #FFFFFF 0%, #F5EDE0 60%, #D4B87A 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                }}
+              >
+                Beta
+              </span>
             </a>
           </div>
         </div>
