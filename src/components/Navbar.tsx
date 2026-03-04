@@ -48,7 +48,7 @@ export default function Navbar() {
             Desert Frontier{" "}
             <span
               style={{
-                background: "linear-gradient(135deg, #FFFFFF 0%, #F5EDE0 60%, #D4B87A 100%)",
+                background: "linear-gradient(135deg, #B08D57 0%, #D4B87A 60%, #F5EDE0 100%)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
               }}
