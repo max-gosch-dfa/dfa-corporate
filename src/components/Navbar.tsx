@@ -43,7 +43,7 @@ export default function Navbar() {
             href="https://delfos.desertfrontieradvisors.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-accent/90"
+            className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-primary/90"
           >
             Desert Frontier{" "}
             <span
@@ -107,7 +107,7 @@ export default function Navbar() {
               href="https://delfos.desertfrontieradvisors.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 rounded-md bg-accent px-4 py-2 text-center text-sm font-medium text-white"
+              className="mt-2 rounded-md bg-primary px-4 py-2 text-center text-sm font-medium text-white"
             >
               Desert Frontier Beta
             </a>

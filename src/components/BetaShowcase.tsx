@@ -17,7 +17,7 @@ const FEATURES = [
     ),
     title: "25+ Years of Data",
     description:
-      "Backtested with proxy reconstructions from FRED economic data back to 1997.",
+      "Backtested with proxy reconstructions from economic data back to 1997.",
   },
   {
     icon: (
@@ -68,9 +68,19 @@ export default function BetaShowcase() {
             href="https://delfos.desertfrontieradvisors.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium text-accent transition-colors hover:text-accent/80"
+            className="inline-block rounded-md bg-primary px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-primary/90"
           >
-            Explore Desert Frontier Beta &rarr;
+            Explore Desert Frontier{" "}
+            <span
+              style={{
+                background: "linear-gradient(135deg, #FFFFFF 0%, #F5EDE0 60%, #D4B87A 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              Beta
+            </span>{" "}
+            &rarr;
           </a>
           <p className="mt-4 text-xs leading-relaxed text-primary/50">
             Model portfolios for educational purposes only. Not investment

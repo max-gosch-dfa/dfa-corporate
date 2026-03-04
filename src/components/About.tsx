@@ -7,7 +7,7 @@ export default function About() {
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-white/60">
           Desert Frontier Advisors is an advisory firm incorporated in Dubai,
-          combining transaction expertise with a research-driven approach to
+          combining transaction and strategic / management expertise with a research-driven approach to
           portfolio construction. We operate at the intersection of strategic
           consulting and systematic investing.
         </p>
