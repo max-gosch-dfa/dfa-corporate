@@ -36,30 +36,13 @@ export default function Footer() {
             </h4>
             <ul className="mt-3 space-y-2">
               <li>
-                
-                  href="#advisory"
-                  className="text-sm text-white/60 transition-colors hover:text-white"
-                >
-                  M&amp;A Advisory
-                </a>
+                <a href="#advisory" className="text-sm text-white/60 transition-colors hover:text-white">M&amp;A Advisory</a>
               </li>
               <li>
-                
-                  href="#consulting"
-                  className="text-sm text-white/60 transition-colors hover:text-white"
-                >
-                  Strategic Consulting
-                </a>
+                <a href="#consulting" className="text-sm text-white/60 transition-colors hover:text-white">Strategic Consulting</a>
               </li>
               <li>
-                
-                  href="https://delfos.desertfrontieradvisors.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-white/60 transition-colors hover:text-white"
-                >
-                  Desert Frontier Beta
-                </a>
+                <a href="https://delfos.desertfrontieradvisors.com" target="_blank" rel="noopener noreferrer" className="text-sm text-white/60 transition-colors hover:text-white">Desert Frontier Beta</a>
               </li>
             </ul>
           </div>
@@ -71,20 +54,10 @@ export default function Footer() {
             </h4>
             <ul className="mt-3 space-y-2">
               <li>
-                
-                  href="#about"
-                  className="text-sm text-white/60 transition-colors hover:text-white"
-                >
-                  About
-                </a>
+                <a href="#about" className="text-sm text-white/60 transition-colors hover:text-white">About</a>
               </li>
               <li>
-                
-                  href="#contact"
-                  className="text-sm text-white/60 transition-colors hover:text-white"
-                >
-                  Contact
-                </a>
+                <a href="#contact" className="text-sm text-white/60 transition-colors hover:text-white">Contact</a>
               </li>
             </ul>
           </div>
@@ -96,20 +69,10 @@ export default function Footer() {
             </h4>
             <ul className="mt-3 space-y-2">
               <li>
-                
-                  href="/terms"
-                  className="text-sm text-white/60 transition-colors hover:text-white"
-                >
-                  Terms of Service
-                </a>
+                <a href="/terms" className="text-sm text-white/60 transition-colors hover:text-white">Terms of Service</a>
               </li>
               <li>
-                
-                  href="/privacy"
-                  className="text-sm text-white/60 transition-colors hover:text-white"
-                >
-                  Privacy Policy
-                </a>
+                <a href="/privacy" className="text-sm text-white/60 transition-colors hover:text-white">Privacy Policy</a>
               </li>
             </ul>
           </div>
