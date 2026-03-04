@@ -7,7 +7,6 @@ interface Capability {
 interface ServiceSectionProps {
   id: string;
   label: string;
-  title: string;
   description: string;
   capabilities: Capability[];
   variant?: "warm" | "light";
@@ -16,7 +15,6 @@ interface ServiceSectionProps {
 export default function ServiceSection({
   id,
   label,
-  title,
   description,
   capabilities,
   variant = "warm",
