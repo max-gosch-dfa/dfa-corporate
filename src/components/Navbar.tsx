@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const NAV_LINKS = [
   { label: "Advisory", href: "#advisory" },
@@ -15,11 +16,20 @@ export default function Navbar() {
     <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-primary/95 backdrop-blur-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
         {/* Logo */}
-        <a href="#" className="flex items-baseline gap-1.5">
-          <span className="text-lg font-semibold text-white">
-            Desert Frontier
-          </span>
-          <span className="text-sm font-medium text-accent">Advisors</span>
+        <a href="#" className="flex items-center gap-3">
+          <Image
+            src="/logo.png"
+            alt="Desert Frontier Advisors"
+            width={32}
+            height={32}
+            className="h-8 w-8"
+          />
+          <div className="flex items-baseline gap-1.5">
+            <span className="text-lg font-semibold text-white">
+              Desert Frontier
+            </span>
+            <span className="text-sm font-medium text-accent">Advisors</span>
+          </div>
         </a>
 
         {/* Desktop nav */}

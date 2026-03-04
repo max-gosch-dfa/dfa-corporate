@@ -50,10 +50,10 @@ export default function Contact() {
         </h2>
         <p className="mt-4 text-white/60">
           <a
-            href="mailto:max.gosch@desertfrontieradvisors.com"
+            href="mailto:info@desertfrontieradvisors.com"
             className="text-accent underline underline-offset-2 transition-colors hover:text-accent-light"
           >
-            max.gosch@desertfrontieradvisors.com
+            info@desertfrontieradvisors.com
           </a>
         </p>
 

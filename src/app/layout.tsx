@@ -1,12 +1,24 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-inter",
+});
+
 export const metadata: Metadata = {
-  title: "Desert Frontier Advisors \u2013 FZCO | Advisory & Transaction Services",
+  title: "Desert Frontier Advisors | Advisory & Transaction Services",
   description:
-    "Specialist advisory firm providing M&A, transaction, and strategic consulting services. Home of Desert Frontier Beta \u2014 transparent, low-cost beta portfolios.",
+    "Specialist advisory firm providing M&A, transaction, and strategic consulting services. Home of Desert Frontier Beta — transparent, low-cost beta portfolios.",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
-    title: "Desert Frontier Advisors \u2013 FZCO",
+    title: "Desert Frontier Advisors",
     description:
       "M&A advisory, strategic consulting, and transparent beta portfolios.",
     siteName: "Desert Frontier Advisors",
@@ -21,7 +33,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">{children}</body>
+      <body className={`${inter.variable} antialiased`}>
+        {children}
+        <CookieConsent />
+      </body>
     </html>
   );
 }

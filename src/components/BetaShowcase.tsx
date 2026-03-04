@@ -52,7 +52,7 @@ export default function BetaShowcase() {
           {FEATURES.map((feat) => (
             <div
               key={feat.title}
-              className="rounded-xl bg-white p-8 shadow-sm"
+              className="rounded-lg border border-surface-muted border-l-[3px] border-l-accent bg-white p-8 shadow-sm transition-shadow hover:shadow-md"
             >
               <div className="text-accent">{feat.icon}</div>
               <h3 className="mt-4 text-lg font-semibold text-primary">
@@ -74,6 +74,10 @@ export default function BetaShowcase() {
           >
             Explore Desert Frontier Beta &rarr;
           </a>
+          <p className="mt-6 text-center text-xs leading-relaxed text-primary/50">
+            Model portfolios for educational purposes only. Not investment
+            advice. Past performance does not guarantee future results.
+          </p>
         </div>
       </div>
     </section>

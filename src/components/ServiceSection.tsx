@@ -41,7 +41,7 @@ export default function ServiceSection({
           {capabilities.map((cap) => (
             <div
               key={cap.title}
-              className="rounded-lg border border-white/10 p-6 transition-colors hover:border-accent/30"
+              className="rounded-lg border border-white/10 border-l-[3px] border-l-accent p-6 transition-shadow hover:shadow-md"
             >
               <h3 className="text-sm font-semibold text-accent">
                 {cap.title}

@@ -17,7 +17,7 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center sm:px-6">
         <p className="mb-6 text-sm font-medium uppercase tracking-[0.25em] text-accent">
-          Desert Frontier Advisors &ndash; FZCO
+          Desert Frontier Advisors
         </p>
         <h1 className="text-4xl font-light leading-tight text-white sm:text-5xl lg:text-6xl">
           Leading the way where maps end,

@@ -10,13 +10,10 @@ export default function About() {
           Who We Are
         </h2>
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/70">
-          Desert Frontier Advisors &ndash; FZCO is an advisory firm
-          incorporated in Dubai, combining transaction expertise with a
-          research-driven approach to portfolio construction. We operate at the
-          intersection of strategic consulting and systematic investing.
-        </p>
-        <p className="mt-4 text-sm font-medium text-accent">
-          Founded by Max Gosch.
+          Desert Frontier Advisors is an advisory firm incorporated in Dubai,
+          combining transaction expertise with a research-driven approach to
+          portfolio construction. We operate at the intersection of strategic
+          consulting and systematic investing.
         </p>
       </div>
     </section>
