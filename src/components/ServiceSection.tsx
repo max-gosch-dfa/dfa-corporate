@@ -1,6 +1,7 @@
 interface Capability {
   title: string;
   description: string;
+  icon: React.ReactNode;
 }
 
 interface ServiceSectionProps {
@@ -9,7 +10,7 @@ interface ServiceSectionProps {
   title: string;
   description: string;
   capabilities: Capability[];
-  dark?: boolean;
+  variant?: "warm" | "light";
 }
 
 export default function ServiceSection({
@@ -18,35 +19,33 @@ export default function ServiceSection({
   title,
   description,
   capabilities,
-  dark = false,
+  variant = "warm",
 }: ServiceSectionProps) {
+  const bgClass = variant === "warm" ? "bg-surface-warm" : "bg-surface-light";
+
   return (
-    <section
-      id={id}
-      className={`scroll-mt-20 ${dark ? "bg-primary-light" : "bg-primary"}`}
-    >
-      <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
-        <p className="text-sm font-medium uppercase tracking-[0.2em] text-accent">
-          <span className="text-accent/50">/ </span>
-          {label}
-        </p>
-        <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
-          {title}
+    <section id={id} className={`scroll-mt-20 ${bgClass}`}>
+      <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+        <h2 className="text-center text-2xl font-bold text-primary sm:text-3xl">
+          <span className="text-accent">/ </span>{label}
         </h2>
-        <p className="mt-6 max-w-3xl text-lg leading-relaxed text-white/70">
+        <p className="mx-auto mt-4 max-w-2xl text-center text-sm text-primary/60">
           {description}
         </p>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {capabilities.map((cap) => (
             <div
               key={cap.title}
-              className="rounded-lg border border-white/10 border-l-[3px] border-l-accent p-6 transition-shadow hover:shadow-md"
+              className="rounded-lg border border-surface-muted border-l-[3px] border-l-accent bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
             >
-              <h3 className="text-sm font-semibold text-accent">
+              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10">
+                <div className="text-accent">{cap.icon}</div>
+              </div>
+              <h3 className="mt-4 text-sm font-semibold text-primary">
                 {cap.title}
               </h3>
-              <p className="mt-3 text-sm leading-relaxed text-white/60">
+              <p className="mt-2 text-sm leading-relaxed text-primary/60">
                 {cap.description}
               </p>
             </div>

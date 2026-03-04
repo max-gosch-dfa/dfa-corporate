@@ -6,6 +6,7 @@ import Image from "next/image";
 const NAV_LINKS = [
   { label: "Advisory", href: "#advisory" },
   { label: "Consulting", href: "#consulting" },
+  { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -13,16 +14,16 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-primary/95 backdrop-blur-sm">
+    <nav className="fixed top-0 z-50 w-full border-b border-surface-muted bg-white">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-3">
+        <a href="#" className="flex items-center">
           <Image
             src="/logo.png"
             alt="Desert Frontier Advisors"
-            width={120}
-            height={35}
-            className="h-8 w-auto"
+            width={333}
+            height={96}
+            className="h-9 w-auto"
             priority
           />
         </a>
@@ -33,7 +34,7 @@ export default function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-white/70 transition-colors hover:text-accent"
+              className="text-sm font-medium text-primary/70 transition-colors hover:text-accent"
             >
               {link.label}
             </a>
@@ -44,14 +45,23 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-accent/90"
           >
-            Desert Frontier Beta
+            Desert Frontier{" "}
+            <span
+              style={{
+                background: "linear-gradient(135deg, #FFFFFF 0%, #F5EDE0 60%, #D4B87A 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+              }}
+            >
+              Beta
+            </span>
           </a>
         </div>
 
         {/* Mobile hamburger */}
         <button
           onClick={() => setOpen(!open)}
-          className="p-2 text-white md:hidden"
+          className="p-2 text-primary md:hidden"
           aria-label="Toggle menu"
         >
           <svg
@@ -81,14 +91,14 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="border-t border-white/10 bg-primary px-4 pb-6 pt-4 md:hidden">
+        <div className="border-t border-surface-muted bg-white px-4 pb-6 pt-4 md:hidden">
           <div className="flex flex-col gap-3">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="px-2 py-1 text-sm font-medium text-white/70 transition-colors hover:text-accent"
+                className="px-2 py-1 text-sm font-medium text-primary/70 transition-colors hover:text-accent"
               >
                 {link.label}
               </a>
