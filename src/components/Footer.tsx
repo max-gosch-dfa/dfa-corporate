@@ -40,7 +40,7 @@ export default function Footer() {
                   href="#advisory"
                   className="text-sm text-white/60 transition-colors hover:text-white"
                 >
-                  M&A Advisory
+                  M&amp;A Advisory
                 </a>
               </li>
               <li>
